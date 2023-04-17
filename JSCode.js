@@ -17,7 +17,7 @@ const NFTs=[];
 function mintNFT (name,eyecolor,shirtType,bling) {
     const NFT={
         "name":name,
-        "eyecolor":eyecolor,
+        "eyeColor":eyecolor,
         "shirtType": shirtType,
         "bling":bling
     }
@@ -32,7 +32,7 @@ function listNFTs () {
     for(let i=0; i<NFTs.length;i++){
         console.log("\nID: \t\t"+(i+1));
         console.log("Name: \t\t"+ NFTs[i].name);
-        console.log("Eyecolor: \t"+ NFTs[i].eyecolor);
+        console.log("Eyecolor: \t"+ NFTs[i].eyeColor);
         console.log("Shirt Type: "+ NFTs[i].shirtType);
         console.log("Bling: \t\t"+ NFTs[i].bling);
     }
@@ -49,4 +49,3 @@ mintNFT("Ben","Brown", "Hoodie", "Necklace");
 mintNFT("Marie","Blue", "T-shirt", "Bracelet");
 listNFTs();
 getTotalSupply();
-
